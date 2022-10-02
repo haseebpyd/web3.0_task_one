@@ -31,3 +31,54 @@ function question_3() {
     document.getElementById('q3_result').innerText=`LowerCase: ${lowercase} \n UpperCase: ${uppercase}\n TitleCase: ${step_4}`;
 
 }
+
+function question_4() {
+    var quote = document.getElementById('q4_quote').value;
+    var name = document.getElementById('q4_name').value;
+    document.getElementById('q4_result').innerText=`Mr ${name} once said, "${quote}"`;
+
+}
+
+function question_6() {
+    var name = document.getElementById('q6_name').value;
+    document.getElementById('q6_result').innerText=`Orignal Name:  ${name}, \n Name without spaces: ${name.trim()}`;
+
+}
+
+function question_7() {
+    var number = document.getElementById('q7_number').value 
+
+    // add statement
+    var add1 = randomInteger(1, number - 1);
+    var add2 = number - add1;
+    var statement_add = `${add1}+${add2} = ${number}`
+
+    // Subtract statement
+    var sub1 = randomInteger(1, number - 1);
+    var sub2 = Number(number) + sub1;
+    var statement_sub = `${sub2}-${sub1} = ${number}`
+
+    // multiplay statement
+    var mul1 = randomInteger(1, number - 1);
+    var mul2 = Number(number) / mul1 ;
+    var statement_mul = `${Number(mul2)}*${mul1} = ${number}`
+
+    // divide statement
+    var div1 = randomInteger(1, number - 1);
+    var div2 = Number(number) * div1 ;
+    var statement_div = `${Number(div2)}/${div1} = ${number}`
+
+
+    document.getElementById('q7_result').innerText=`${statement_add} \n ${statement_sub} \n ${statement_mul} \n ${statement_div}`;
+
+}
+
+function randomInteger(min, max) {
+  return Math.floor(Math.random() * (max - min + 1)) + min;
+}
+
+function question_9() {
+    var number = document.getElementById('q9_number').value;
+    document.getElementById('q9_result').innerText=`Hmm, Your favorite number is ${number}`;
+
+}
