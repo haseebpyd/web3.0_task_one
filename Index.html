@@ -195,6 +195,113 @@
         <button class="btn btn-success">Done</button>
       </div>
 
+      <!-- Question 11 & 12 -->
+
+      <div class="border border-priamry bg-info bg-opacity-10 rounded p-3 m-3">
+        <h4 class="">Question 11 & 12</h4>
+        <p>
+          Names: Store the names of a few of your friends in a array called
+          names. Print each person’s name by accessing each element in the list,
+          one at a time.
+        </p>
+        <p>
+          Greetings: Start with the array you used in Exercise 11, but instead
+          of just printing each person’s name, print a message to them. The text
+          of each message should be the same, but each message should be
+          personalized with the person’s name.
+        </p>
+
+        <div class="mb-3">
+          <label for="q11_name1" class="form-label">Enter Friend Name 1</label>
+          <input type="text" class="form-control" id="q11_name1" />
+        </div>
+        <div id="addNewFriend"></div>
+        <button type="button" class="btn btn-link" onclick="add_new_friend()">
+          Add Another Friend
+        </button>
+        <p id="q11_result"></p>
+        <button type="button" class="btn btn-primary" onclick="question_11()">
+          Submit
+        </button>
+      </div>
+
+      <!-- Question 13 -->
+
+      <div class="border border-priamry bg-info bg-opacity-10 rounded p-3 m-3">
+        <h4 class="">Question 13</h4>
+        <p>
+          Your Own Array: Think of your favorite mode of transportation, such as
+          a motorcycle or a car, and make a list that stores several examples.
+          Use your list to print a series of statements about these items, such
+          as “I would like to own a Honda motorcycle.
+        </p>
+
+        <div class="mb-3">
+          <label for="q14_guest" class="form-label"
+            >Enter car names (Honda, BMW, Audi, etc)</label
+          >
+          <input type="text" class="form-control" id="q13_cars" />
+        </div>
+        <p id="q13_result"></p>
+        <button type="button" class="btn btn-primary" onclick="question_13()">
+          Submit
+        </button>
+      </div>
+
+      <!-- Question 14 -->
+
+      <div class="border border-priamry bg-info bg-opacity-10 rounded p-3 m-3">
+        <h4 class="">Question 14</h4>
+        <p>
+          Guest List: If you could invite anyone, living or deceased, to dinner,
+          who would you invite? Make a list that includes at least three people
+          you’d like to invite to dinner. Then use your list to print a message
+          to each person, inviting them to dinner.
+        </p>
+
+        <div class="mb-3">
+          <label for="q14_guest" class="form-label"
+            >Enter guest names(Haseeb, salman, waqar, etc)</label
+          >
+          <input type="text" class="form-control" id="q14_guest" />
+        </div>
+        <p id="q14_result"></p>
+        <button type="button" class="btn btn-primary" onclick="question_14()">
+          Submit
+        </button>
+
+        <h5 class="mt-3">Question 15: Replace Guest Name</h5>
+        <p>
+          Changing Guest List: You just heard that one of your guests can’t make
+          the dinner, so you need to send out a new set of invitations. You’ll
+          have to think of someone else to invite. • Start with your program
+          from Exercise 14. Add a print statement at the end of your program
+          stating the name of the guest who can’t make it. • Modify your list,
+          replacing the name of the guest who can’t make it with the name of the
+          new person you are inviting. • Print a second set of invitation
+          messages, one for each person who is still in your list.
+        </p>
+        <div class="mb-3">
+          <label for="prev_guest" class="form-label"
+            >Enter Guest name to replace</label
+          >
+          <input type="text" class="form-control" id="prev_guest" />
+        </div>
+
+        <div class="mb-3">
+          <label for="new_guest" class="form-label">Enter New Guest Name</label>
+          <input type="text" class="form-control" id="new_guest" />
+        </div>
+        <button
+          type="button"
+          class="btn btn-secondary"
+          onclick="replace_guest()"
+        >
+          Replace Name
+        </button>
+        <p id="replaced_result"></p>
+      </div>
+
       <!-- footer -->
       <div class="alert alert-info text-center bold">
         <strong>Other Questions are under progress</strong>
